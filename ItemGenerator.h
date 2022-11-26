@@ -4,12 +4,11 @@
 class ItemGenerator
 {
 private:
-	static ItemGenerator* itemgenerator;
+	static ItemGenerator* itemGenerator;
 	std::vector<Item> itemList;
 public:
 	ItemGenerator();
-	static ItemGenerator GetInstance();
+	//static ItemGenerator GetInstance();
 	Item GenerateItem();
 	~ItemGenerator();
 };
-

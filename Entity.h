@@ -3,12 +3,14 @@
 
 class Entity
 {
-private:
+protected:
 	std::string name;
 	int level;
 	int maxHitpoints;
 	int hitpoints;
 public:
+
+	Entity();
 	Entity(std::string name, int level, int maxHP);
 
 	virtual void attack(Entity e);

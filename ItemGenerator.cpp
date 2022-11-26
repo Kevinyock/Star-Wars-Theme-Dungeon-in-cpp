@@ -1,14 +1,16 @@
 #include "ItemGenerator.h"
 #include "Item.h"
 #include <fstream>
-#include <random>
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 ItemGenerator::ItemGenerator()
 {
 	std::string itemName;
-	std::ifstream file("itemList.txt");
-	if (file.is_open())
+	std::fstream file ("ItemList.txt");
+
+	if(file.is_open())
 	{
 		while (std::getline(file, itemName))
 		{
@@ -17,24 +19,33 @@ ItemGenerator::ItemGenerator()
 	}
 	else
 	{
-		std::cout << "Unable to open item file";
+		std::cout << "Unable to find item file";
 	}
 }
 
+//TODO: Fix linker issue
+/*
 ItemGenerator ItemGenerator::GetInstance()
 {
-	if (itemgenerator == nullptr)
+
+	if (itemGenerator == nullptr)
 	{
-		itemgenerator = new ItemGenerator();
+		itemGenerator = new ItemGenerator();
 	}
-	return *itemgenerator;
+	return itemGenerator;
+
 }
+*/
 
 Item ItemGenerator::GenerateItem()
 {
-	std::random_device rd; // Obtain a random number from hardware
-	std::mt19937 gen(rd()); // Seed the generator
-	std::uniform_int_distribution<> distr(0,itemList.size()); // Define the range
+	srand(time(0));
 
-	int randNum = distr(gen);
+	int itemNum = rand() % itemList.size();
+	return itemList.at(itemNum).clone();
+}
+
+ItemGenerator::~ItemGenerator()
+{
+	itemList.clear();
 }

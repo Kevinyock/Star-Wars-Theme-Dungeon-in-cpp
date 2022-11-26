@@ -1,9 +1,20 @@
 #include "Entity.h"
 #include <iostream>
 
+Entity::Entity()
+{
+	this->name = "Test";
+	this->level = 1;
+	this->maxHitpoints = 10;
+	this->hitpoints = 10;
+}
+
 Entity::Entity(std::string name, int level, int maxHP)
 {
 	this->name = name;
+	this->level = level;
+	this->maxHitpoints = maxHP;
+	this->hitpoints = maxHP;
 }
 
 void Entity::attack(Entity e)
@@ -48,7 +59,10 @@ void Entity::takeDamage(int hitpoints)
 {
 	this -> hitpoints -= hitpoints;
 }
-
+/// <summary>
+/// Increase Max HP, Mainly used for level up
+/// </summary>
+/// <param name="hitpoints"></param>
 void Entity::increaseMaxHP(int hitpoints)
 {
 	maxHitpoints += hitpoints;
