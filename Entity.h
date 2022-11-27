@@ -11,9 +11,8 @@ protected:
 public:
 
 	Entity();
-	Entity(std::string name, int level, int maxHP);
 
-	virtual void attack(Entity e);
+	virtual void Attack(Entity e);
 
 	std::string getName();
 
@@ -34,5 +33,6 @@ public:
 	void decreaseMaxHP(int h);
 
 	void display();
+
 };
 

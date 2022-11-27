@@ -8,7 +8,7 @@ private:
 	std::vector<Item> itemList;
 public:
 	ItemGenerator();
-	//static ItemGenerator GetInstance();
+	static ItemGenerator GetInstance();
 	Item GenerateItem();
 	~ItemGenerator();
 };

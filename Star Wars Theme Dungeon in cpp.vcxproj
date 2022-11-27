@@ -139,23 +139,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dathormiri.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Force.cpp" />
+    <ClCompile Include="Geonosian.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemGenerator.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Rodian.cpp" />
+    <ClCompile Include="Twilek.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dathormiri.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Force.h" />
+    <ClInclude Include="Geonosian.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemGenerator.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Rodian.h" />
+    <ClInclude Include="Twilek.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

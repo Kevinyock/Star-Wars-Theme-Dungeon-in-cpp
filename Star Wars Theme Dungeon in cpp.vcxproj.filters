@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Enemy Type">
+      <UniqueIdentifier>{6ae1d0b9-f5fe-4ece-9171-5844a4b8b31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy Type">
+      <UniqueIdentifier>{4bd8e830-b7a3-4dec-bb5b-3cda627f18bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items">
+      <UniqueIdentifier>{8c358f93-79be-440c-ae0e-7dcbca66a6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items">
+      <UniqueIdentifier>{2c25515a-6c70-47cc-b202-b208445cae0f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -24,13 +36,7 @@
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Enemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ItemGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Force.cpp">
@@ -38,6 +44,24 @@
     </ClCompile>
     <ClCompile Include="Map.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rodian.cpp">
+      <Filter>Source Files\Enemy Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Twilek.cpp">
+      <Filter>Source Files\Enemy Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Dathormiri.cpp">
+      <Filter>Source Files\Enemy Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemGenerator.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Geonosian.cpp">
+      <Filter>Source Files\Enemy Type</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,13 +71,7 @@
     <ClInclude Include="Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Enemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ItemGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Force.h">
@@ -61,6 +79,24 @@
     </ClInclude>
     <ClInclude Include="Map.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rodian.h">
+      <Filter>Header Files\Enemy Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Twilek.h">
+      <Filter>Header Files\Enemy Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Dathormiri.h">
+      <Filter>Header Files\Enemy Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemGenerator.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Geonosian.h">
+      <Filter>Header Files\Enemy Type</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

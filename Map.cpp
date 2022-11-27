@@ -1,10 +1,12 @@
 #include "Map.h"
 
+Map* Map::instance = nullptr;
+
 Map::Map()
 {
 }
 
-/*
+
 Map Map::GetInstance()
 {
 	if (instance == nullptr) {
@@ -12,4 +14,4 @@ Map Map::GetInstance()
 	}
 	return *instance;
 }
-*/
+

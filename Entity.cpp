@@ -6,18 +6,11 @@ Entity::Entity()
 	this->name = "Test";
 	this->level = 1;
 	this->maxHitpoints = 10;
-	this->hitpoints = 10;
+	this->hitpoints = maxHitpoints;
 }
 
-Entity::Entity(std::string name, int level, int maxHP)
-{
-	this->name = name;
-	this->level = level;
-	this->maxHitpoints = maxHP;
-	this->hitpoints = maxHP;
-}
 
-void Entity::attack(Entity e)
+void Entity::Attack(Entity e)
 {
 }
 

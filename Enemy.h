@@ -10,6 +10,7 @@ private:
     /// </summary>
     Item item;
 public:
-    Enemy(std::string name, int enemyLevel, int enemyMaxHP);
+    Enemy();
+    Item GetItem();
 };
 

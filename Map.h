@@ -5,7 +5,7 @@ class Map
 private:
 	char map[5][5];
 	bool revealed[5][5];
-	Map* instance;
+	static Map* instance;
 public:
 	Map();
 	Map GetInstance();

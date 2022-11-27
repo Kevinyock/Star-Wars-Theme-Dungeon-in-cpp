@@ -5,6 +5,8 @@
 #include <cstdlib>
 #include <ctime>
 
+ItemGenerator* ItemGenerator::itemGenerator = nullptr;
+
 ItemGenerator::ItemGenerator()
 {
 	std::string itemName;
@@ -23,8 +25,6 @@ ItemGenerator::ItemGenerator()
 	}
 }
 
-//TODO: Fix linker issue
-/*
 ItemGenerator ItemGenerator::GetInstance()
 {
 
@@ -32,10 +32,10 @@ ItemGenerator ItemGenerator::GetInstance()
 	{
 		itemGenerator = new ItemGenerator();
 	}
-	return itemGenerator;
+	return *itemGenerator;
 
 }
-*/
+
 
 Item ItemGenerator::GenerateItem()
 {
