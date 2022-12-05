@@ -144,6 +144,7 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Force.cpp" />
     <ClCompile Include="Geonosian.cpp" />
+    <ClCompile Include="Hero.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemGenerator.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Force.h" />
     <ClInclude Include="Geonosian.h" />
+    <ClInclude Include="Hero.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemGenerator.h" />
     <ClInclude Include="Map.h" />
